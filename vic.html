@@ -4,6 +4,7 @@
 <title>Мозамбик(Викторина)</title>
 <link rel="shortcut icon" href="vic.ico" type="image/x-icon">
 <link rel="stylesheet" type="text/css" href="mob.css">
+<script src="mob.js"></script>
 <meta charset="utf-8" />
 </head>
 <body>
@@ -11,12 +12,51 @@
 <h1 align="center">Викторина</h1>
 </header>
 <main>
-<ul>
-  <li><a href="index.html">Главная</a></li>
-  <li><a href="carta.html">Карта</a></li>
-  <li><a class="active" href="vic.html">Викторина</a></li>
-  <li style="float:right"><a href="fun.html">Fun</a></li>
+<ul class="menu">
+  <li class="mens"><a href="index.html">Главная</a></li>
+  <li  class="mens"><a href="carta.html">Карта</a></li>
+  <li  class="mens"><a class="active" href="vic.html">Викторина</a></li>
+  <li  class="mens" style="float:right"><a href="fun.html">Fun</a></li>
 </ul>
+<div class="win">
+            <center><b><h1>Викторина</b></h1></center>
+            <form name="test">
+				<div class="c1">
+                    <li>
+                        <b> Кто создал сайт?<b><br>
+                        <label><input type="radio" value="0" name="Q1" /> Стефан</label><br />
+                        <label><input type="radio" value="1" name="Q1" /> Зачем этот вопрос?</label><br />
+                        <label><input type="radio" value="2" name="Q1" /> Буратино</label><br />
+                        <br>
+                    </li>
+				</div>
+				<div class="c2">
+                    <li>
+                        <b> Про какую страну этот сайт</b><br>
+                        <label><input type="radio" value="0" name="Q2" /> Мазамбик</label><br />
+                        <label><input type="radio" value="1" name="Q2" /> Мозамбик</label><br />
+                        <label><input type="radio" value="2" name="Q2" /> Мазомбик</label><br />
+                        <br>
+                    </li>
+					</div>
+					<div class="c3">
+                    <li>
+                        <b>Сколько вкладок меню?</b><br>
+                        <label><input type="radio" value="0" name="Q3" /> 5</label><br />
+                        <label><input type="radio" value="1" name="Q3" /> 4</label><br />
+                        <label><input type="radio" value="2" name="Q3" /> 3</label><br />
+                        <br>
+                    </li>
+					</div>
+                <CENTER>
+				<div class="c4">
+                    <P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+                    <INPUT onclick="check_me()" type="button" value="Показать результат" />&nbsp;&nbsp;&nbsp;&nbsp;
+                    <INPUT type="reset" value="Сбросить ответы" />
+                </CENTER>
+				</div>
+            </form>
+        </div>
 </main>
 <footer class="page-footer">
 <p class="info"><a class="ss" href="https://vk.com/stefanrer">Стефан Ребриков</a> (c) 2017</p>
